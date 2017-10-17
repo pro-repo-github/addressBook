@@ -1,0 +1,48 @@
+<div class="container">
+  <form class="form-horizontal" ng-controller="FormController">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="firstname">firstname:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="firstname" placeholder="Enter firstname " name="firstname" ng-model="firstname">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="surname">surname:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="surname" placeholder="Enter surname " name="surname" ng-model="surname">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="street">street:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="street" placeholder="Enter street " name="street" ng-model="street">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="postcode">postcode:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="postcode" placeholder="Enter postcode " name="postcode" ng-model="postcode">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="place">place:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="place" placeholder="Enter place " name="place" ng-model="place">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="country">country:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="country" placeholder="Enter country " name="country" ng-model="country">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button class="btn btn-success" ng-click="save()">save</button>
+        <button class="btn btn-success" ui-sref="list">cancel</button>
+      </div>
+    </div>
+    <!-- style muss noch bearbeitet werden class= control-label col-sm-2 und so weiter -->
+
+  </form>
+</div>

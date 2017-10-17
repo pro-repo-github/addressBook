@@ -1,0 +1,38 @@
+<div class="container">
+    <table class="table table-bordered" ng-controller="ListController">
+        <thead class="thead">
+            <tr>
+                <th></th>
+                <th>Firstname</th>
+                <th>Surname</th>
+                <th>Street</th>
+                <th>Postcode</th>
+                <th>Place</th>
+                <th>Country</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="address in addresses | filter : searchkey | orderBy:'firstname'">
+                <td><span id="user-icon" class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span></td>
+                <td>{{address.firstname}}</td>
+                <td>{{address.surname}}</td>
+                <td>{{address.street}}</td>
+                <td>{{address.postcode}}</td>
+                <td>{{address.place}}</td>
+                <td>{{address.country}}</td>
+                <td>
+                    <a ui-sref="form({id: address.id})">
+                    Edit
+                </a>
+                </td>
+                <td>
+                    <a ui-sref="delete({id: address.id})">
+                    Delete
+                </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
