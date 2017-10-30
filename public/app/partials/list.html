@@ -1,5 +1,5 @@
 <div class="container">
-    <table class="table table-bordered" ng-controller="ListController">
+	<table class="table table-bordered">
         <thead class="thead">
             <tr>
                 <th></th>
@@ -14,14 +14,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="address in addresses | filter : searchkey | orderBy:'firstname'">
+            <tr ng-repeat="address in listController.addresses | filter : searchkey | orderBy:'firstname'">
                 <td><span id="user-icon" class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span></td>
-                <td>{{address.firstname}}</td>
-                <td>{{address.surname}}</td>
-                <td>{{address.street}}</td>
-                <td>{{address.postcode}}</td>
-                <td>{{address.place}}</td>
-                <td>{{address.country}}</td>
+                <td>{{::address.firstname}}</td>
+                <td>{{::address.surname}}</td>
+                <td>{{::address.street}}</td>
+                <td>{{::address.postcode}}</td>
+                <td>{{::address.place}}</td>
+                <td>{{::address.country}}</td>
                 <td>
                     <a ui-sref="form({id: address.id})">
                     Edit
@@ -34,5 +34,5 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+	</table>
 </div>

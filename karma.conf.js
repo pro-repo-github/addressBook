@@ -5,7 +5,7 @@ module.exports = function (config) {
         files: [
             'node_modules/angular/angular.min.js',
             'node_modules/angular-resource/angular-resource.min.js',
-            'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+            'public/lib/angular-ui-router.js',
             'node_modules/angular-mocks/angular-mocks.js',
             'public/app/*.js',
             'test/**/*[Ss]pec.js'],
@@ -15,6 +15,7 @@ module.exports = function (config) {
         plugins: [
             'karma-jasmine',
             'karma-chrome-launcher',
+			'karma-firefox-launcher',
             'karma-coverage'
         ],
         reporters: ['progress', 'coverage'],
@@ -22,7 +23,7 @@ module.exports = function (config) {
         colors: true,
         logLevel: config.LOG_DEBUG,
         autowatch: true,
-        browsers: ['Chrome'],
+        browsers: ['Chrome','Firefox'],
         singleRun: false,
         concurrency: Infinity,
         coverageReporter: {

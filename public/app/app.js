@@ -11,15 +11,18 @@ function configFn($stateProvider, $urlRouterProvider) {
         .state('list', {
             url: "/list",
             templateUrl: "app/partials/list.html",
-            controller: 'ListController'
+            controller: 'ListController',
+			controllerAs: 'listController'
         })
         .state('form', {
             url: "/form/:id",
             templateUrl: "app/partials/form.html",
-            controller: 'FormController'
+            controller: 'FormController',
+			controllerAs: 'formController'
         })
         .state('delete', {
             url: "/delete/:id",
-            controller: 'DeleteController'
+            controller: 'DeleteController',
+			controllerAs: 'deleteController'
         });
 }

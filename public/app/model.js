@@ -1,9 +1,9 @@
 angular.module('addressBook')
     .factory('dataFactory', dataFactory);
 
-dataFactory.$inject = ['$resource', '$q'];
+dataFactory.$inject = ['$resource'];
 
-function dataFactory($resource, $q) {
+function dataFactory($resource) {
   return  $resource(
         '/address/:id',
         { id: '@id' },
