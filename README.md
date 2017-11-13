@@ -1,6 +1,6 @@
 Addressbook prototype
 =====================
-Single-page applications which manages the CRUD operations.
+Single-page application which manages the CRUD operations.
 technologies: Angular JS, Express JS, SQLite3, Bootstrap.
 
 ## SQLite3
