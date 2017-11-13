@@ -1,17 +1,16 @@
 Addressbook prototype
 =====================
-Angular.js frontend framework Single-Page-Webapplication welches der CRUD operationen verwaltet, backend Node.js Express-Framework REST-Service der CRUD-Operationen unterstützt.
+Single-page applications which manages the CRUD operations.
+technologies: Angular JS, Express JS, SQLite3, Bootstrap.
 
-### SQLite als Datenbanksystem einsetzen
-Um es zu erstellen, müssen Sie die SQLite3-Shell verwenden, Wechseln Sie zu das db-Verzeichenis das Applikation, und setzen Sie die pfahle die in structure.sql ab. 
+## SQLite3
+to build it, you need to use the SQLite3 shell, go to the db folder and run the commands from the structure.sql. 
 
-### nodejs
-installieren und führen Sie im Hauptordner das Applikation das pfahl npm install um alle Abhängigkeiten in package.json datei zu installieren.
+## nodejs 
+install it and run in side the main application folder the command *npm install* to install all dependencies from package.json, run express js server with the command *node index.js* then connect with Browser with http: // localhost: 8080.
 
-mit dem pfahl node index.js führen Sie express js server aus. im Browser nutzen Sie die Adresse http://localhost:8080 um verbindung aufzubauen.
 
-### für fragen
-bin ich zur verfügung.
+enjoy it
 
 
 
